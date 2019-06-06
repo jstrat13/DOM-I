@@ -51,6 +51,19 @@ nav[5].textContent = 'Contact';
 
 
 
+const h1 = document.querySelector('h1');
+h1.textContent =  "DOM Is Awesome";
+
+const button = document.querySelector('button');
+button.textContent = "Get Started";
+
+const ctaImg = document.querySelector("#cta-img");
+ctaImg.setAttribute('src', "img/header-img.png")
 
 
-console.log(nav); 
+
+
+
+
+
+// console.log(ctaImg); 
