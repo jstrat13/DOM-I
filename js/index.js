@@ -41,7 +41,8 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-const nav = document.querySelectorAll("a");
+
+const nav = document.querySelectorAll("a");                 // NAV
 nav[0].textContent = 'Services';
 nav[1].textContent = 'Product';
 nav[2].textContent = 'Vision';
@@ -67,20 +68,28 @@ prependNav.setAttribute('href', '#');
 const navParent = document.querySelector('nav');
 
 navParent.append(appendNav);
-navParent.prepend(prependNav);
+navParent.prepend(prependNav);                                // NAV
+                                                                       
 
-console.log(appendNav)
+
+
 
 const h1 = document.querySelector('h1');
-h1.textContent =  "DOM Is Awesome";
+h1.textContent =  "DOM Is Awesome";                      // h1
 
-const button = document.querySelector('button');
+
+
+const button = document.querySelector('button');    // button
 button.textContent = "Get Started";
 
-const ctaImg = document.querySelector("#cta-img");
+
+
+const ctaImg = document.querySelector("#cta-img");      // cta-img
 ctaImg.setAttribute('src', "img/header-img.png");
 
-const h4 = document.querySelectorAll('h4');
+
+
+const h4 = document.querySelectorAll('h4');             // h4
 h4[0].textContent = "Features";
 h4[1].textContent = "About";
 h4[2].textContent = "Services";
@@ -88,10 +97,11 @@ h4[3].textContent = "Product";
 h4[4].textContent = "Vision";
 h4[5].textContent = "Contact";
 
-const midImg = document.querySelector("#middle-img");
+const midImg = document.querySelector("#middle-img");       //  mid-img
 midImg.setAttribute('src', "img/mid-page-accent.jpg");
 
-const p = document.querySelectorAll('p');
+
+const p = document.querySelectorAll('p');                  // p tags
 p[0].textContent = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.';
 p[1].textContent =  "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
 p[2].textContent = "Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.";
