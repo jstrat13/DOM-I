@@ -60,10 +60,13 @@ nav[5].style.color = 'chartreuse';
 const appendNav = document.createElement('a');
 appendNav.textContent = 'APPEND';
 appendNav.setAttribute('href', '#');
+appendNav.style.color = 'deeppink';
+
 
 const prependNav = document.createElement('a');
 prependNav.textContent = 'PREPEND';
 prependNav.setAttribute('href', '#');
+prependNav.style.color = 'deeppink';
 
 const navParent = document.querySelector('nav');
 
