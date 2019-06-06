@@ -49,7 +49,27 @@ nav[3].textContent = 'Features';
 nav[4].textContent = 'About';
 nav[5].textContent = 'Contact';
 
+nav[0].style.color = 'chartreuse';
+nav[1].style.color = 'chartreuse';
+nav[2].style.color = 'chartreuse';
+nav[3].style.color = 'chartreuse';
+nav[4].style.color = 'chartreuse';
+nav[5].style.color = 'chartreuse';
 
+const appendNav = document.createElement('a');
+appendNav.textContent = 'APPEND';
+appendNav.setAttribute('href', '#');
+
+const prependNav = document.createElement('a');
+prependNav.textContent = 'PREPEND';
+prependNav.setAttribute('href', '#');
+
+const navParent = document.querySelector('nav');
+
+navParent.append(appendNav);
+navParent.prepend(prependNav);
+
+console.log(appendNav)
 
 const h1 = document.querySelector('h1');
 h1.textContent =  "DOM Is Awesome";
@@ -81,7 +101,6 @@ p[5].textContent =  "123 Way 456 Street Somewhere, USA";
 p[6].textContent =  "1 (888) 888-8888";
 p[7].textContent =  "sales@greatidea.io";
 p[8].textContent =  "Copyright Great Idea! 2018";
-
 
 
 
